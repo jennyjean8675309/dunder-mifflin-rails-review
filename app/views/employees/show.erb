@@ -1,0 +1,11 @@
+<h1>Details Page for <%= @employee.full_name %></h1>
+
+<h2>Alias: <%= @employee.alias %></h2>
+
+<h2>Office: <%= @employee.office %></h2>
+
+<h2>Title: <%= @employee.title %></h2>
+
+<h2>Dog Associated with <%= @employee.first_name %>: <%= link_to @employee.dog.name, dog_path(@employee.dog) %></h2>
+
+<img src=<%= @employee.img_url %> />

@@ -1,0 +1,13 @@
+<h1>Details for <%= @dog.name %></h1>
+
+<h2>Breed: <%= @dog.breed %></h2>
+
+<h2>Age: <%= @dog.age %></h2>
+
+<h2>Dunder Mifflin Employees Associated with <%= @dog.name %></h2>
+
+<ul>
+    <% @dog.employees.each do |employee| %>
+        <li><%= link_to employee.full_name, employee_path(employee) %></li>
+    <% end %>
+</ul>
